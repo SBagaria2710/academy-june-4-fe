@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forms</title>
+</head>
+<body>
+  <form onsubmit="">
+    <label>Name:</label>
+    <input type="text">
+    
+    <br><br>
+
+    <label>Email:</label>
+    <input type="email">
+
+    <br><br>
+
+    <label>Phone Number:</label>
+    <input type="tel">
+
+    <br><br>
+
+    <label>Age:</label>
+    <input type="number" min="10" max="60">
+
+    <br><br>
+
+    <label>Food Preference:</label>
+    <input type="radio" name="food" value="veg">Veg
+    <input type="radio" name="food" value="non-veg">Non-Veg
+
+    <br><br>
+
+    <label>Work Location Preference:</label>
+    <input type="radio" name="location" value="r">Remote
+    <input type="radio" name="location" value="h">Hybrid
+    <input type="radio" name="location" value="io">In-Office
+
+    <br><br>
+
+    <label>Country:</label>
+    <select>
+      <!-- <option value="">Select Option</option> -->
+      <option value="india">India</option>
+      <option value="usa" selected>USA</option>
+      <option value="uk">UK</option>
+    </select>
+
+    <br><br>
+    <label>Comment:</label>
+    <textarea></textarea>
+
+    <br><br>
+    <label>Birth Day:</label>
+    <input type="date">
+
+    <br><br>
+    <label>Car's Color:</label>
+    <input type="color">
+
+    <br><br>
+    <input id="subscribe" type="checkbox" checked>
+    <label for="subscribe">Don't need cutlery</label>
+
+    <br><br>
+    <label>Upload Resume:</label>
+    <input type="file" multiple accept="application/pdf">
+
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>

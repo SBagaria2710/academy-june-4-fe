@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tables</title>
+  <style>
+    table {
+      border-collapse: collapse;
+    }
+    td, th {
+      border: 1px solid #ddd;
+      text-align: center;
+      padding: 8px;
+    }
+  </style>
+</head>
+<body>
+  <!-- <table border>
+    <tr>
+      <th>Heading 1</th>
+      <th>Heading 2</th>
+      <th>Heading 3</th>
+    </tr>
+    <tr>
+      <td>Data 1</td>
+      <td>Data 1</td>
+      <td>Data 1</td>
+    </tr>
+  </table> -->
+
+  <table style="text-align: center;">
+    <caption>Employee Table</caption>
+
+    <colgroup>
+      <col span="2" style="background-color: blue;">
+    </colgroup>
+
+    <thead>
+      <tr>
+        <th colspan="2">Company and Name</th>
+        <th>Location</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td rowspan="2">Google</td>
+        <td>Arun</td>
+        <td>SF</td>
+      </tr>
+      <tr>
+        <td>Arman</td>
+        <td>Gurgaon</td>
+      </tr>
+      <tr>
+        <td>JioCinema</td>
+        <td>Shashwat</td>
+        <td>Bangalore</td>
+      </tr>
+    </tbody>
+
+    <tfoot>
+      <tr>
+        <th>Company</th>
+        <th>Name</th>
+        <th>Location</th>
+      </tr>
+    </tfoot>
+  </table>
+</body>
+</html>
