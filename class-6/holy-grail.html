@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Holy Grail Layout</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      margin: 20px;
+      padding: 10px;
+      border: 2px solid #333;
+      height: 100vh;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 24px;
+      font-weight: 600;
+
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 100px 50px repeat(4, 1fr) 100px;
+      grid-template-areas: 
+        "scaler scaler scaler scaler"
+        "sidebar nav nav nav"
+        "sidebar main main main"
+        "sidebar main main main"
+        "sidebar main main main"
+        "sidebar main main main"
+        "academy academy academy academy";
+    }
+
+    .header {
+      grid-area: scaler;
+      background-color: lightcoral;
+    }
+
+    .sidebar {
+      grid-area: sidebar;
+      background-color: lightblue;
+    }
+
+    .nav {
+      grid-area: nav;
+      background-color: lightgreen;
+    }
+
+    .main {
+      grid-area: main;
+      background-color: lightgoldenrodyellow;
+    }
+
+    .footer {
+      grid-area: academy;
+      background-color: lightcoral;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="header">Header</header>
+    <aside class="sidebar">Sidebar</aside>
+    <nav class="nav">Nav</nav>
+    <article class="main">Main</article>
+    <footer class="footer">Footer</footer>
+  </div>
+</body>
+</html>
